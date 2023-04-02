@@ -6,62 +6,175 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    
+    
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <!--&#127968 -->
+        <img src="images/home.png" height='60', width="60">
+        
+        </button>
+    
+    
+    
 	<header>
-		<h1>Akshay Kumar</h1> <h3>Satheesh Kumar</h3>
-        <img src="https://avatars.githubusercontent.com/u/50155239?v=4", height='100', width="100">
+		<h1>Akshay Kumar <h3>Satheesh Kumar</h3> </h1>
+        <img src="https://avatars.githubusercontent.com/u/50155239?v=4", height='170', width="170">
 		<p>Machine Learning Student @ Stevens Institute of Technology</p>
 		<nav>
 			<ul>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
+                <div id="navbar">
+				<li><a class="active" href="#about" onclick="javascript:void(0)">About Me</a></li>
+                <li><a class="active" href="#resume" onclick="javascript:void(0)">Resume</a></li>
+				<li><a class="active" href="#portfolio" onclick="javascript:void(0)">Portfolio</a></li>
+                <li><a class="active" href="#contact" onclick="javascript:void(0)">Contact</a></li>
+                </div> 
+                
 			</ul>
 		</nav>
 	</header>
 
+    
+            
+    
+    
+    
 	<main>
 		<section id="about">
 			<h2>About Me</h2>
+            
+
 			<p>
                 
                 As a current Master's student in Machine Learning, I have gained a strong understanding of Data Analytics, Machine Learning, Deep Learning, Big Data Technologies, Data Management, and Statistical Machine Learning, and I have had the opportunity to apply these skills through various projects and an internship. For example, I designed and developed a dashboard on software bugs during my summer internship where Gigabytes of real-time data were condensed and visualized in the most intuitive dashboard for the head of the Quality and Assurance team. Additionally, I have developed strong problem-solving analytical skills, leadership skills, and presentation skills, as I have taken part in and led teams in multiple national-level Hackathons. I have also two research projects, and got a research paper published in the IEEE Journal.  
             
-            
             </p>
+            
+         
 		</section>
+        
+        
+        
+        <section id="resume">
+            <h2>Resume</h2>
+            <center>
+                <iframe src="https://drive.google.com/file/d/1hhqH9uUBJlMge_V8vqRNm-uOvlo-aSCE/preview" width="800" height="1000" allow="autoplay"></iframe>
+            </center>
+            
+        </section>
+        
+        
+        
 
 		<section id="portfolio">
-			<h2>Portfolio</h2>
-			<div class="project">
-				<img src="project1.jpg" alt="Project 1">
-				<h3>Project 1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<a href="#">View Project</a>
-			</div>
-			<div class="project">
-				<img src="project2.jpg" alt="Project 2">
-				<h3>Project 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<a href="#">View Project</a>
-			</div>
+			<h2>Projects</h2>
+            
+            
+            
+            <ul >
+                
+              <li onclick="visitWebsite('https://github.com/akshaaayyy/network_anom_detect', 'Would you like to visit the GitHub repository?')"> <img src="images/Project_Img/network_anomaly.jpg" alt="Email" />Network Anomaly Detection</li>
+              <li onclick="visitWebsite('https://github.com/akshaaayyy/Detection-of-Poor-Telecom-Connectivity-Regions', 'Would you like to visit the GitHub repository?')"> <img src="images/Project_Img/Telecom.jpg" alt="Email" />Telecom Connectivity Detection</li>
+              <li onclick="visitWebsite('https://github.com/akshaaayyy/Elephant_detection_IOT_DL', 'Would you like to visit the GitHub repository?')"> <img src="images/Project_Img/elephant%20detection.jpeg" alt="Email" />Elephant Detection System</li>
+              <li onclick="visitWebsite('https://github.com/akshaaayyy/sentiment_website', 'Would you like to visit the GitHub repository?')"> <img src="images/Project_Img/sentiment_analysis.jpg" alt="Email" />Sentiment Analysis</li>
+              <li onclick="visitWebsite('https://github.com/akshaaayyy/Covid-19-Forecasting', 'Would you like to visit the GitHub repository?')"> <img src="images/Project_Img/covid_forecasting.jpg" alt="Email" />Covid-19 Forecasting</li>
+                
+            </ul>
+            
+            
+            
+            
 		</section>
 
-		<section id="contact">
+		<section id="contact" class = "contact_select">
 			<h2>Contact</h2>
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required>
-				<label for="message">Message:</label>
-				<textarea id="message" name="message" required></textarea>
-				<button type="submit">Send Message</button>
-			</form>
+            
+            <ul >
+
+              <li onclick="visitWebsite('mailto: skakshaykumar55@gmail.com', 'Would you like to send me a mail?')"> <img src="images/Contacts_Img/email.png" alt="Email" />Email</li>
+                  
+              <li onclick="visitWebsite('https://www.linkedin.com/in/akshaaayyy/', 'Would you like to visit my LinkedIn?')">  <img src="images/Contacts_Img/linkedin.png" />LinkedIn</li>
+                
+              <li onclick="visitWebsite('tel:+12019207518', 'Would you like to call me?')"> <img src="images/Contacts_Img/contact.png" alt="a pineapple sitting on a table. " />Phone</li>
+                
+              <li onclick="visitWebsite('https://wa.me/+12019207518', 'Would you like to WhatsApp me?')"> <img src="images/Contacts_Img/whatsapp.png" alt="a pineapple sitting on a table. " />WhatsApp</li>
+                
+              <li onclick="visitWebsite('https://github.com/akshaaayyy', 'Would you like to visit my GitHub profile?')"> <img src="images/Contacts_Img/github.png" alt="a pineapple sitting on a table. " />GitHub</li>                
+                
+
+            </ul>
+            
+            
 		</section>
 	</main>
 
 	<footer>
-		<p>. . . . .</p>
+		....
+        
+        
+            
 	</footer>
+    
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    
+    
+function visitWebsite(siteLink,message) 
+    {
+    if (confirm(message)) 
+        {
+        window.location.href = siteLink;
+        }
+    }    
+    
+    
+ window.onscroll = function() {
+     myFunction()
+     scrollFunction()
+ };
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+    
+    
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+    
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+  }
+}   
+    
+    
+</script>
+    
+    
+    
 </body>
 </html>

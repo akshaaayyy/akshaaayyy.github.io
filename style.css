@@ -1,0 +1,247 @@
+/* Global styles */
+
+html{
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 20px;
+    padding: 40px;
+    background-image:url('images/w_bg2.gif');
+    background-size:100%;
+    background-repeat: repeat-n;
+    background-attachment: fixed;
+
+}
+
+h1, h2, h3 {
+    font-weight: 100;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #007bff;
+}
+
+img {
+    max-width: 100%;
+
+    height: auto;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(244, 244, 244, 0.8);
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 1px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    overflow: hidden;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  background-color: rgba(244, 244, 244);
+  width: 90%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgba(244, 244, 244);
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: rgba(244, 244, 244);
+
+}
+
+
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+nav a {
+    font-size: 18px;
+    padding: 10px;
+
+    
+}
+
+/* Main styles */
+main {
+    padding: 50px 0;
+    
+}
+
+section {
+    margin-bottom: 50px;
+    background-color: rgba(244, 244, 244, 0.6);
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+#about p{
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.project {
+    background-color: #f8f8f8;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.project p {
+    margin-bottom: 20px;
+}
+
+.project a {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.project a:hover {
+    background-color: #0069d9;
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: rgba(85, 85, 85, 0.0);
+  color: #000000;
+  cursor: pointer;
+  padding: 1px;
+  border-radius: 1px;
+}
+
+#myBtn:hover {
+  background-color: rgba(85, 85, 85, 0.05);
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------- */
+
+ section ul {
+  padding: 1px;  /*this should be same as the margin and padding in HTML   */
+  margin: 20px;   /*this should be same as the margin and padding in HTML   */
+  display: block;
+  width: 95%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+
+
+ section li {
+  position: sticky;
+  left: 0;
+  width: min(50vw, 350px);
+  display: inline-block;
+  text-align: center;
+  background-color: #dbdbdb;
+  color: black;
+  padding-bottom: 1.5rem;
+  font-size: clamp(10px, 2.5vw, 25px);
+  box-shadow: -10px 0 30px 0 rgba(0, 0, 0, 0.25);
+  margin-left: -4px;
+}
+
+
+section img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
