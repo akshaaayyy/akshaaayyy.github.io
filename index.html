@@ -6,6 +6,7 @@
 	<title>My Personal Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/b0f52f8964.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -29,7 +30,7 @@
                 <div id="navbar">
 				<li><a class="active" href="#about" onclick="javascript:void(0)">About Me</a></li>
                 <li><a class="active" href="#resume" onclick="javascript:void(0)">Resume</a></li>
-				<li><a class="active" href="#portfolio" onclick="javascript:void(0)">Portfolio</a></li>
+				<li><a class="active" href="#portfolio" onclick="javascript:void(0)">Projects</a></li>
                 <li><a class="active" href="#contact" onclick="javascript:void(0)">Contact</a></li>
                 </div> 
                 
@@ -112,12 +113,32 @@
 	</main>
 
 	<footer>
-		....
         
-        
+        <ul class="sci">
             
+
+            <li>
+              <a onclick="visitWebsite('mailto: skakshaykumar55@gmail.com', 'Would you like to send me an email?')" title="Email" ><i id= "at" class="fa-brands fa-at" ></i></a>
+                  
+            </li>  
+            <li>
+              <a onclick="visitWebsite('tel:+12019207518', 'Would you like to call or save my number?')" title="Phone"><i class="fa-solid fa-phone"></i></a>
+            </li>  
+            <li>
+              <a onclick="visitWebsite('https://wa.me/+12019207518', 'Would you like to WhatsApp me?')" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a onclick="visitWebsite('https://www.linkedin.com/in/akshaaayyy/', 'Would you like to connect me on LinkedIn?')" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a onclick="visitWebsite('https://github.com/akshaaayyy', 'Would you like to visit my GitHub profile?')" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </li>              
+          
+
+          </ul>
+        
 	</footer>
-    
+ 
 <script>
 // Get the button
 let mybutton = document.getElementById("myBtn");

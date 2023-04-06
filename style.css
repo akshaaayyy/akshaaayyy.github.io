@@ -2,6 +2,10 @@
 
 html{
     scroll-behavior: smooth !important;
+    align-content: center;
+
+
+
 }
 
 body {
@@ -10,13 +14,18 @@ body {
     line-height: 1.5;
     color: #333;
     margin: 20px;
-    padding: 40px;
+    padding: 20px;
+    width:auto;
     background-image:url('images/w_bg2.gif');
     background-size:100%;
     background-repeat: repeat-n;
     background-attachment: fixed;
 
+    
+
 }
+
+
 
 h1, h2, h3 {
     font-weight: 100;
@@ -91,11 +100,12 @@ nav ul {
 }
 #navbar a:hover {
   background-color: #ddd;
-  color: black;
+  color: #43c3f2;
 }
 
 #navbar a.active {
   background-color: rgba(244, 244, 244);
+
 
 }
 
@@ -110,6 +120,7 @@ nav li {
 nav a {
     font-size: 18px;
     padding: 10px;
+    
 
     
 }
@@ -174,7 +185,7 @@ section h2 {
 footer {
     background-color: #f8f8f8;
     border-top: 1px solid #eee;
-    padding: 20px 0;
+    padding: 1px 0;
     text-align: center;
 }
 
@@ -204,8 +215,42 @@ footer p {
   background-color: rgba(85, 85, 85, 0.05);
 }
 
+/* ---------------------------------------------------------------------------------------------- */
 
 
+.sci {
+  position: relative;
+  display: flex;
+  margin-top: 15px;
+ flex-direction:row;
+  justify-content:space-around;
+}
+
+.sci li {
+  list-style: none;
+  margin: 4px;
+}
+
+.sci li a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1.5em;
+  color: #444;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.5s;
+}
+
+.sci li a:hover {
+  background: #3fcbff;
+  color: #fff;
+  
+}
 
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -213,6 +258,7 @@ footer p {
  section ul {
   padding: 1px;  /*this should be same as the margin and padding in HTML   */
   margin: 20px;   /*this should be same as the margin and padding in HTML   */
+  
   display: block;
   width: 95%;
   overflow-y: hidden;
