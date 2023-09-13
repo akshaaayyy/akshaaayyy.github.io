@@ -1,5 +1,5 @@
 # Akshay Kumar
-### M.S Machine Learning Student at Steven Institute of technology
+### Master of Science in Machine Learning at Steven Institute of Technology 
 
 # Visit my Website : https://akshaaayyy.github.io/
 <center><img src="https://avatars.githubusercontent.com/u/50155239?v=4"></center>
