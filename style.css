@@ -87,11 +87,14 @@ nav ul {
   position: fixed;
   top: 0;
   background-color: rgba(244, 244, 244);
-  width: 90%;
+  height: 4%;    
+  width: 91.5%;
 }
 
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 500px;
+  padding-top: 10px;
+  top: 10px;
 }
 
 #navbar {
